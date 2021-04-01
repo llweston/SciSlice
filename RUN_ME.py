@@ -21,7 +21,7 @@ data_points = []
 import time
 
 import pygame
-#from pygame.locals import *
+from pygame.locals import *
 
 from wireframe import Wireframe
 

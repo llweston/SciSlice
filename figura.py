@@ -19,7 +19,7 @@ organizing coroutines in the LineGroups to create an ideal print order.
 @author: lvanhulle
 """
 
-from point import Point
+import point
 from infill import Infill
 from linegroup import LineGroup
 from line import Line
@@ -207,7 +207,7 @@ def organizedLayer(inOutlines, randStart):
 #        
 #        startPoint = Point(startX, startY)
     else:
-        startPoint = Point(minX, minY)
+        startPoint = point.Point(minX, minY)
         
     lastPoint = startPoint # The starting point for the sort
     indexOfClosest = -1 # A default value for the inital run
